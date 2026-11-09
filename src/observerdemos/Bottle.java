@@ -16,6 +16,10 @@ public class Bottle implements Observable {
 		notifyObservers();
 	}
 
+	public void fill() {
+		changeAmount(70);
+	}
+
 	@Override
 	public void notifyObservers() {
 		for (Observer o : observers) {

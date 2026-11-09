@@ -8,14 +8,18 @@ public class Main {
 
 		bottle.add(optimist);
 		bottle.add(pessimist);
+		bottle.add(new Realist());
 
 		System.out.println("-- Drinker_Ib drikker --");
 		bottle.changeAmount(50);
-		System.out.println("-- Drinker_Ib drikker igen --");
+		System.out.println("-- Drinker_Ib drikker igen (under 35 cl) --");
 		bottle.changeAmount(20);
 
 		bottle.remove(pessimist);
 		System.out.println("-- Pessimisten er fjernet --");
 		bottle.changeAmount(5);
+
+		System.out.println("-- Flasken fyldes --");
+		bottle.fill();
 	}
 }
